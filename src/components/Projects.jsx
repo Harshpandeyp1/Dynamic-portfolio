@@ -1,36 +1,40 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaTimes } from "react-icons/fa";
-
+import prison from "../assets/prison.png";
+import jobapp from "../assets/jobapp.png";
+import ai from "../assets/ai.png";
+import vastra from "../assets/vastra.png";
 const projects = [
+    {
+    title: "Vastra",
+    tags: ["React", "spingboot","mysql " ,"spring Ai","CSS Modules"],
+    description: "A full-stack e-commerce platform for clothing and accessories. Features a React frontend, Spring Boot backend, and MySQL database for seamless shopping experiences.",
+    image: vastra,
+    github: "https://github.com/Harshpandeyp1/Vastra-E-comm"
+  },
   {
     title: "Prison Manager",
-    tags: ["React", "Tailwind", "Node.js", "MySQL"],
-    description: "A full-stack admin panel for prison record management. Features secure role-based access control (RBAC) to manage inmates, staff schedules, and facility activities.",
-    image: "/project-prison.jpg", // Replace with your image path
+    tags: ["React", "Tailwind", "springboot", "MySQL"],
+    description: "A full-stack admin panel for prison record management. Features secure access control (RBAC) to manage inmates, staff schedules, and facility activities.",
+    image: prison,
     github: "https://github.com/Harshpandeyp1/prison_manager"
   },
   {
     title: "Job App",
-    tags: ["Spring Boot", "React", "REST API", "PostgreSQL"],
+    tags: ["Servlets", "Jsp", "REST API", "PostgreSQL"],
     description: "A robust job portal with application tracking and job posting features. Built with a Spring Boot backend and a React frontend for high performance.",
-    image: "/project-job.jpg", // Replace with your image path
+    image: jobapp,
     github: "https://github.com/Harshpandeyp1/Jobapp-Springboot"
   },
   {
-    title: "Civylitics",
-    tags: ["React", "Data Viz", "Chart.js"],
-    description: "An analytics platform for civil Service Aspirants  intregated with Api to get summary pyq all at once.",
-    image: "/Screenshot 2026-04-01 220331.png", // Replace with your image path
-    github: "https://github.com/Harshpandeyp1/Civilytics"
-  },
-  {
-    title: "Dept Master",
-    tags: ["React", "Context API", "CSS Modules"],
-    description: "A specialized dept Management system to recover you from all of your depts..",
-    image: "/project-dept.jpg", // Replace with your image path
-    github: "https://github.com/Harshpandeyp1/Dept-master"
+    title: "Chat Bot",
+    tags: ["React", "Gemini api", "Node.js"],
+    description: "An AI-powered chatbot that leverages the Gemini API for natural language understanding. Built with a React frontend and Node.js backend for real-time interactions.",
+    image: ai,
+    github: "https://github.com/Harshpandeyp1/AI-powered-chatbot-"
   }
+
 ];
 
 const Projects = () => {

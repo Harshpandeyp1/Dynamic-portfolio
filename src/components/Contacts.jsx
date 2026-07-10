@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaGithub, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaCode } from "react-icons/fa";
 
 const Contact = () => {
   // WhatsApp Link Construction
@@ -13,8 +13,8 @@ const Contact = () => {
       className="min-h-screen bg-[#050505] text-white flex flex-col items-center justify-center px-6 py-24 relative overflow-hidden"
     >
       {/* Background Decorative Glow */}
-      <div className="absolute w-[600px] h-[600px] bg-emerald-500/5 blur-[120px] rounded-full top-[-10%] left-[-10%] pointer-events-none"></div>
-      <div className="absolute w-[500px] h-[500px] bg-red-500/5 blur-[120px] rounded-full bottom-[-10%] right-[-10%] pointer-events-none"></div>
+      <div className="absolute w-150 h-150 bg-emerald-500/5 blur-[120px] rounded-full top-[-10%] left-[-10%] pointer-events-none"></div>
+      <div className="absolute w-125 h-125 bg-red-500/5 blur-[120px] rounded-full bottom-[-10%] right-[-10%] pointer-events-none"></div>
 
       <div className="max-w-4xl w-full relative z-10 text-center">
         {/* Heading */}
@@ -24,7 +24,7 @@ const Contact = () => {
           className="mb-20"
         >
           <h2 className="text-emerald-400 tracking-[0.4em] uppercase text-xs font-black mb-4">Availability</h2>
-          <h1 className="text-6xl md:text-8xl font-black bg-gradient-to-b from-white to-gray-600 text-transparent bg-clip-text">
+          <h1 className="text-6xl md:text-8xl font-black bg-linear-to-b from-white to-gray-600 text-transparent bg-clip-text">
             Get In Touch.
           </h1>
           <p className="mt-6 text-gray-400 text-lg max-w-xl mx-auto leading-relaxed">
@@ -34,7 +34,7 @@ const Contact = () => {
         </motion.div>
 
         {/* Contact Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <ContactInfoCard 
             icon={<FaEnvelope className="text-blue-400" />} 
             label="Email Me" 
@@ -54,10 +54,16 @@ const Contact = () => {
             href="https://github.com/Harshpandeyp1" 
           />
           <ContactInfoCard 
-            icon={<FaInstagram className="text-pink-500" />} 
-            label="Instagram" 
-            value="@the_harshpandey_p1" 
-            href="https://instagram.com/the_harshpandey_p1" 
+            icon={<FaLinkedin className="text-blue-500" />} 
+            label="LinkedIn" 
+            value="@harshpandeyp1" 
+            href="https://www.linkedin.com/in/harsh-pandey-381b2a371/" 
+          />
+          <ContactInfoCard 
+            icon={<FaCode className="text-blue-500" />} 
+            label="LeetCode" 
+            value="@Harshpandey_p1" 
+            href="https://leetcode.com/u/Harshpandey_p1/" 
           />
         </div>
 
@@ -88,7 +94,7 @@ const ContactInfoCard = ({ icon, label, value, href }) => (
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ y: -8, scale: 1.02 }}
-    className="group p-8 bg-white/5 border border-white/10 rounded-[2rem] backdrop-blur-xl hover:bg-white/10 transition-all text-left flex flex-col justify-between h-44"
+    className="group p-8 bg-white/5 border border-white/10 rounded-4xl backdrop-blur-xl hover:bg-white/10 transition-all text-left flex flex-col justify-between h-44"
   >
     <div className="text-4xl group-hover:scale-110 transition-transform origin-left">
       {icon}

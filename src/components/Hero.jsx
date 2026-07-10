@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
 import { useEffect } from "react";
+import Certificates from "./Certificates";
 
 export const useVaporTrail = (canvasRef) => {
   useEffect(() => {
@@ -181,7 +182,7 @@ const Hero = () => {
   <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 </a>
 
-        <a href="/Resume.pdf" download="Resume.pdf">
+        <a href="/HarshResume.pdf" download="HarshResume.pdf">
   <button className="px-8 py-4 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl font-medium flex items-center gap-2 hover:bg-white/10 transition-all hover:border-white/40">
     <FaFileDownload className="text-purple-400" /> Resume
   </button>
@@ -223,6 +224,7 @@ const Hero = () => {
 
     <section id="projects">
   <Projects />
+  <Certificates/>
 </section>
     <section id="contacts">
   <Contacts />

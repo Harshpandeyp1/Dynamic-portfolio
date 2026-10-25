@@ -9,7 +9,7 @@ import react from "../assets/react.png";
 import prompt from "../assets/prompt.png";
 import dsa from "../assets/dsa.png";
 import java from "../assets/java.png";
-import Microsoft from "../assets/Microsoft.png";
+import Microsoft from "../assets/microsoft.png";
 import kaggle from "../assets/kaggle.png";
 
 const certificates = [

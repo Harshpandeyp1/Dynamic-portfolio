@@ -120,7 +120,7 @@ const About = () => {
                    <FaServer className="text-blue-400" /> Tech Stack
                 </h3>
                 <div className="flex flex-wrap gap-3">
-                  {["React", "Spring Boot", "Node.js", "Java", "Python", "JSP", "Tailwind"].map((tech, i) => (
+                  {["React", "Spring Boot", "Mongo-Db", "Spring Security","Java", "servlets","DSA","System Design","My Sql","Node.js", "JSP","Spring Ai","GEN AI", "Tailwind"].map((tech, i) => (
                     <span key={i} className="px-4 py-2 bg-black border border-white/5 rounded-xl text-sm font-medium hover:border-emerald-500 transition-colors cursor-default">
                       {tech}
                     </span>

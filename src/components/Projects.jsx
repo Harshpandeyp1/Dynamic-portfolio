@@ -5,6 +5,7 @@ import prison from "../assets/prison.png";
 import jobapp from "../assets/jobapp.png";
 import ai from "../assets/ai.png";
 import vastra from "../assets/vastra.png";
+import collabrix from "../assets/collabrix.png";
 const projects = [
     {
     title: "Vastra",
@@ -14,11 +15,11 @@ const projects = [
     github: "https://github.com/Harshpandeyp1/Vastra-E-comm"
   },
   {
-    title: "Prison Manager",
+    title: "collabrix",
     tags: ["React", "Tailwind", "springboot", "MySQL"],
-    description: "A full-stack admin panel for prison record management. Features secure access control (RBAC) to manage inmates, staff schedules, and facility activities.",
-    image: prison,
-    github: "https://github.com/Harshpandeyp1/prison_manager"
+    description: "Collabrix is a full-stack collaboration and professional networking platform designed for developers and students to discover like-minded people, share project ideas, build teams, and collaborate on real-world projects.",
+    image: collabrix,
+    github: "https://github.com/Harshpandeyp1/CollaBrix"
   },
   {
     title: "Job App",

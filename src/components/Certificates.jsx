@@ -9,8 +9,26 @@ import react from "../assets/react.png";
 import prompt from "../assets/prompt.png";
 import dsa from "../assets/dsa.png";
 import java from "../assets/java.png";
+import Microsoft from "../assets/Microsoft.png";
+import kaggle from "../assets/kaggle.png";
 
 const certificates = [
+ {
+    title: "Microsoft Github Fundamentals",
+    issuer: "Microsoft",
+    tags: ["GitHub", "Version Control", "Collaboration"],
+    description: "Gained foundational knowledge in GitHub, including version control, collaboration workflows, and best practices for managing code repositories. Developed skills in branching, merging, and pull requests.",
+    image: Microsoft,
+    
+  },
+ {
+    title: "kaggle",
+    issuer: "Google |kaggle",
+    tags: ["vibe coding"],
+    description: "learned vibe coding",
+    image: kaggle,
+    
+  },
  {
     title: "GenAI Certification",
     issuer: "Google | Coursera",
@@ -57,7 +75,6 @@ const certificates = [
     tags: ["Java", "OOPs Concepts", "Multithreading"],
     description: "Solidified core programming competencies in Java. Mastered the pillars of Object-Oriented Programming (Inheritance, Polymorphism, Abstraction, Encapsulation), collections, exception handling, and memory management.",
     image: java,
- 
   }
 ];
 

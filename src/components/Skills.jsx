@@ -1,13 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { 
-  FaReact, FaJava, FaJs, FaHtml5, FaCss3Alt, 
-  FaNodeJs, FaPython, FaServer, FaTerminal,
-  FaDatabase
-} from "react-icons/fa";
+  FaReact, 
+  FaJava, 
+  FaJs, 
+  FaHtml5, 
+  FaServer, 
+  FaNodeJs, 
+  FaCode 
+} from 'react-icons/fa';
 import { 
-  SiSpringboot, SiNextdotjs, SiApachetomcat, SiTailwindcss 
-} from "react-icons/si";
+  SiSpringboot, 
+  SiTailwindcss, 
+  SiApachetomcat, 
+  SiSpringsecurity, 
+  SiMysql, 
+  SiOpenai, 
+  SiMongodb 
+} from 'react-icons/si';
 
 const skillCategories = [
   {
@@ -17,26 +27,31 @@ const skillCategories = [
       { name: "Spring Boot", icon: <SiSpringboot className="text-green-500" />, level: 80 },
       { name: "Java", icon: <FaJava className="text-red-500" />, level: 85 },
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" />, level: 80 },
+      { name: "Prompt Engineering", icon: <SiOpenai className="text-emerald-400" />, level: 85 },
     ],
   },
   {
-    title: "Web Foundation",
+    title: "Web Foundation & Backend",
     skills: [
       { name: "HTML5", icon: <FaHtml5 className="text-orange-500" />, level: 90 },
       { name: "CSS3 / Tailwind", icon: <SiTailwindcss className="text-sky-400" />, level: 85 },
       { name: "JSP & Servlet", icon: <FaServer className="text-gray-400" />, level: 75 },
+      { name: "Spring Security", icon: <SiSpringboot className="text-green-600" />, level: 80 },
       { name: "Apache Tomcat", icon: <SiApachetomcat className="text-orange-400" />, level: 70 },
     ],
   },
   {
-    title: "Expanding Horizon",
+    title: "Data & Ecosystem",
     skills: [
-      { name: "Next.js", icon: <SiNextdotjs className="text-white" />, level: 50 },
+      { name: "MySQL", icon: <SiMysql className="text-blue-400" />, level: 75 },
       { name: "Node.js", icon: <FaNodeJs className="text-green-400" />, level: 55 },
-      { name: "Python", icon: <FaPython className="text-blue-400" />, level: 60 },
-      { name: "MySQL", icon: <FaDatabase className="text-blue-400" />, level: 60 },
+      { name: "Gen AI", icon: <SiOpenai className="text-white" />, level: 80 },
+      { name: "Spring AI", icon: <SiSpringboot className="text-emerald-500" />, level: 65 },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-500" />, level: 50 },
+     
     ],
   },
+ 
 ];
 
 const Skills = () => {
